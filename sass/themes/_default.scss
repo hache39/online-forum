@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as v;
+
+html * {
+  font-family: v.$roboto-font;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #2b2d38;
+  margin-left: 160px;
+}

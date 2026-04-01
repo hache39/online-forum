@@ -1,0 +1,126 @@
+@use "../abstracts/variables" as *;
+
+main {
+  display: flex;
+  p.descripcion {
+    width: 601px;
+    height: 120px;
+  }
+
+  .botones {
+    display: flex;
+
+    margin-top: 32px;
+
+    a {
+      text-decoration: none;
+    }
+    .btnlearn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: $primary-color;
+      text-decoration: underline;
+      margin-left: 32px;
+    }
+  }
+
+  .part2 {
+    position: relative;
+    .overlay {
+      display: flex;
+      gap: 32px;
+      position: relative;
+
+      .col {
+        display: flex;
+        flex-direction: column;
+
+        figure {
+          margin: 0;
+          overflow: hidden;
+          margin-top: 32px;
+
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .imgs1 {
+        width: 240px;
+        height: 509px;
+      }
+      .imgs2 {
+        width: 240px;
+        height: 240px;
+      }
+      .imgs3 {
+        width: 240px;
+        height: 240px;
+      }
+      .imgs4 {
+        width: 240px;
+        height: 509px;
+      }
+
+      .col--center {
+        justify-content: center;
+        height: 749px; // 509 + 240 = total de las otras columnas
+
+        .imgs5 {
+          width: 240px;
+          height: 509px;
+        }
+      }
+    }
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    width: 616px;
+    height: 64px;
+    div {
+      display: flex;
+      gap: 15px;
+
+      &.info1 {
+        width: 190px;
+        height: 64px;
+      }
+
+      &.info2 {
+        width: 141px;
+        height: 64px;
+      }
+
+      &.info3 {
+        width: 189px;
+        height: 64px;
+      }
+      p {
+        color: $primary-color;
+        font-family: $poppins-font;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+  .ellipse1 {
+    position: absolute;
+    z-index: -1;
+    bottom: -40px;
+    left: 142px;
+  }
+  .ellipse2 {
+    position: absolute;
+    z-index: -1;
+    bottom: -40px;
+    right: -115px;
+  }
+}
